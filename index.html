@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kue Sukses - Kue Modern & Tradisional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1><i class="fas fa-birthday-cake"></i> Toko Kue Sukses</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Toko Kue Sukses</h2>
+            <p>Kue Lezat untuk Setiap Momen Istimewa Anda</p>
+            <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                Lihat Menu Kami
+            </button>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="profil">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="profil-content">
+                <div class="profil-text">
+                    <h3>Toko Kue Sukses</h3>
+                    <p>Sejak tahun 2010, Toko Kue Sukses telah menjadi pilihan utama masyarakat untuk kue berkualitas tinggi. Kami menyediakan berbagai pilihan kue modern dan tradisional dengan bahan-bahan pilihan terbaik.</p>
+                    <h4>Keunggulan Kami:</h4>
+                    <ul class="keunggulan-list">
+                        <li><i class="fas fa-check-circle"></i> Bahan Berkualitas Premium</li>
+                        <li><i class="fas fa-check-circle"></i> Resep Autentik Turun Temurun</li>
+                        <li><i class="fas fa-check-circle"></i> Desain Custom Tersedia</li>
+                        <li><i class="fas fa-check-circle"></i> Pengiriman Tepat Waktu</li>
+                        <li><i class="fas fa-check-circle"></i> Harga Terjangkau</li>
+                    </ul>
+                </div>
+                <div class="profil-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-birthday-cake"></i>
+                        <p>Galeri Kue Kami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Daftar Menu Kami</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="modern">Kue Modern</button>
+                <button class="filter-btn" data-filter="tradisional">Kue Tradisional</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items akan di-load oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="kontak-content">
+                <div class="kontak-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jalan Gatot Subroto No. 123<br>Jakarta Selatan, 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>(021) 1234-5678<br>0812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@tokokuekus.com<br>order@tokokuekus.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Jumat: 09:00 - 18:00<br>Sabtu - Minggu: 10:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="kontak-form">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Toko Kue Sukses. Semua Hak Dilindungi. | Dibuat dengan <i class="fas fa-heart"></i> untuk Anda</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
